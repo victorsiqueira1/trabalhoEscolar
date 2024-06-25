@@ -62,34 +62,29 @@
           </button>
         </div>
       </div>
-      <div class="fim letraParaResumi">
-        <div>
+      <div class="fim letraParaResumi links">
+        <div style="height: 40px;padding-top: 20px;">
           <p style="font-weight: 700">GitHub</p>
-          <div class="links">
-            <a class="oLink" href=" https://github.com/victorsiqueira1">
-              https://github.com/victorsiqueira1</a
-            >
-          </div>
+
+          <a class="oLink" href=" https://github.com/victorsiqueira1">
+            https://github.com/victorsiqueira1</a
+          >
         </div>
 
-        <div>
+        <div style="height: 40px;padding-top: 20px;">
           <p style="font-weight: 700">Email</p>
-          <div class="links">
-            <a class="oLink"> victorcubas1972@gmail.com</a>
-          </div>
+
+          <a class="oLink"> victorcubas1972@gmail.com</a>
         </div>
 
-        <div>
+        <div style="height: 40px;padding-top: 20px;">
           <p style="font-weight: 700">Instagram</p>
-          <div class="links">
-            <p class="oLink">victor.hugo.pcs2003</p>
-          </div>
+
+          <p class="oLink">victor.hugo.pcs2003</p>
         </div>
 
-        <div class="aoba">
-          <div class="links">
-            <p class="oLink">2024 By Victor Hugo Pedroso.</p>
-          </div>
+        <div style="height: 40px;padding-top: 1.9rem; " class="aoba">
+          <p class="oLink links">2024 By Victor Hugo Pedroso.</p>
         </div>
       </div>
     </div>
@@ -104,7 +99,7 @@ export default {}
   font-weight: 400;
   font-style: normal;
   width: 100%;
-  height: 95vh;
+
   display: flex;
   align-items: center;
   background-color: #f3f3f3;
@@ -132,7 +127,7 @@ export default {}
   opacity: 0.75;
   display: flex;
   gap: 1px;
-  font-size: 10px;
+  font-size: 15px;
 }
 .quadradinho {
   width: 80px;
@@ -213,7 +208,7 @@ export default {}
 }
 .fim {
   width: 100%;
-  height: 10%;
+  height: 1vh;
   margin-top: 7rem;
   padding-top: 20px;
   font-size: 13px;
@@ -236,7 +231,7 @@ export default {}
     font-weight: 400;
     font-style: normal;
     width: 100%;
-    height: 95vh;
+    height: 90%;
     display: flex;
     align-items: center;
     background-color: #f3f3f3;
@@ -244,37 +239,37 @@ export default {}
   }
   .umaBola {
     width: 5rem;
-    height: 12vh;
+    height: 9.5vh;
     border-radius: 100%;
     border: 1px black solid;
     font-size: 10px !important;
   }
   .foto {
     width: 27%;
-    height: 70%;
+    height: 80%;
     border-radius: 100%;
     margin-left: 10px;
   }
   .oResumme {
     display: flex;
     width: 100%;
-    height: 15rem;
+    height: 18rem;
   }
   .meio {
-    width: 60%;
+    width: 61%;
     height: 100%;
     flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-left: 15rem;
-    padding-top: 90px;
+    padding-top: 50px;
   }
   .fim {
     width: 100%;
-    height: 50vh;
+    height: 1vh;
     margin-top: 7rem;
-    padding-top: 20px;
+    padding-top: 10px;
     font-size: 13px;
     padding-left: 70px;
     border-top: 1px solid #c7c7c7;
@@ -286,16 +281,18 @@ export default {}
     height: 10vh;
     display: flex;
     gap: 10px;
-    margin-left: 120px;
-    margin-top: 30px;
+    margin-left: 95px;
+    margin-top: 15px;
+    margin-bottom: 10px
   }
   .parteAbaixo {
     width: 100%;
-    height: 95vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+    height: 90%;
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
   .letraParaResumi {
     font-family: 'Montserrat', sans-serif;
@@ -312,7 +309,7 @@ export default {}
     font-size: 10px;
   }
   .resumo {
-    width: 40%;
+    width: 46%;
     height: 50%;
     margin-left: 5px;
     margin-top: 50px;
@@ -320,7 +317,7 @@ export default {}
     flex-direction: column;
     justify-content: center;
     padding-left: 10px;
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 @media screen and (min-width: 610px) and (max-width: 1023px) {
@@ -329,7 +326,7 @@ export default {}
     font-weight: 400;
     font-style: normal;
     width: 100vw;
-    height: 100vh;
+    height: 92%;
     display: flex;
     align-items: center;
     background-color: #f3f3f3;
@@ -341,11 +338,11 @@ export default {}
     opacity: 0.75;
     display: flex;
     gap: 1px;
-    font-size: 7px;
+    font-size: 9px;
   }
   .umaBola {
-    width: 3rem;
-    height: 9vh;
+    width: 4rem;
+    height: 8vh;
     border-radius: 100%;
     border: 1px black solid;
     font-size: 8px !important;
@@ -359,7 +356,7 @@ export default {}
   }
   .oResumme {
     display: flex;
-
+    margin-top: 0;
     height: 15rem;
   }
   .quadradinho {
@@ -377,13 +374,14 @@ export default {}
     display: flex;
     align-items: center;
     padding-left: 80px;
+    padding-top: 0px;
     justify-content: center;
   }
   .fim {
     width: 100%;
-    height: 40%;
-    margin-top: 4rem;
-    padding-top: 15px;
+    height: 1vh;
+   padding-bottom: 20px;
+    padding-top: 5px;
     font-size: 3px;
     padding-left: 20px;
     border-top: 1px solid #c7c7c7;
@@ -394,12 +392,12 @@ export default {}
     gap: 15%;
   }
   .quatroBola {
-    width: 20rem;
+    width: 45%;
     height: 5vh;
     display: flex;
     gap: 10px;
     margin-left: 8vw;
-    margin-top: 3rem;
+    margin-top: 2rem;
   }
   .links {
     margin-top: 7px;
@@ -407,9 +405,9 @@ export default {}
   }
   .parteAbaixo {
     width: 100%;
-    height: 65vh;
+    height: 100%;
     flex-direction: column;
-    margin-top: 50px;
+    padding-top: 95px;
   }
   .letraParaResumi {
     font-family: 'Montserrat', sans-serif;
@@ -422,7 +420,7 @@ export default {}
     margin-left: 10px;
   }
   .resumo {
-    width: 40%;
+    width: 55%;
     height: 50%;
     margin-left: 5px;
     margin-top: 50px;
@@ -440,6 +438,7 @@ export default {}
     font-weight: 400;
     font-style: normal;
     width: 100%;
+    height: 100vh;
     display: flex;
     align-items: center;
     background-color: #f3f3f3;
@@ -474,7 +473,7 @@ export default {}
     height: 15rem;
   }
   .aoba {
-    font-size: 0px;
+    font-size: 1px;
     padding-top: 0px;
   }
   .quadradinho {
@@ -497,7 +496,7 @@ export default {}
   }
   .fim {
     width: 100vw;
-    height: 40%;
+    height: 1vh;
     margin-top: 4rem;
     padding-top: 15px;
     font-size: 3px;
@@ -526,7 +525,7 @@ export default {}
   }
   .parteAbaixo {
     width: 70%;
-    height: 65vh;
+    height: 100%;
     flex-direction: column;
     margin-top: 50px;
   }
