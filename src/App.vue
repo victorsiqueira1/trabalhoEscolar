@@ -15,99 +15,8 @@
       </div>
 
       <div class="parteAbaixo">
-        <div class="meio">
-          <transition name="toast">
-            <div class="ola" v-show="showtoast">
-              <div class="oResumme">
-                <img
-                  class="foto"
-                  src="../src/components/WhatsApp Image 2024-06-20 at 12.48.21.jpeg"
-                  alt=""
-                />
-                <div class="resumo letraParaResumi">
-                  <h1 class="letraGrande">Victor Hugo</h1>
-                  <h3 style="margin-bottom: 10px; margin-left: 15px">Um pouco de mim</h3>
-                  <p style="margin-left: 15px">
-                    meu nome é Victor Hugo, estou estudando sistema de informação, e trabalho
-                    atualmente Sicoob Sarom, Apesar de mexer mais em banco de dados e
-                    desenvolvimento de sistemas, meu sonho sempre foi trabalhar em desenvolvimento
-                    de jogos, por isso estou estudando algumas linguagem relacionadas a esses ramo.
-                    Uma coisa que contribuiu muito para entrar na Sarom, foi que foi aberta uma vaga
-                    PCD, e eu tenho autismo nivel 1, tive muita dificuldade em me acostumar no
-                    trabalho presencial, mais estou cada dia melhor.
-                  </p>
-                </div>
-              </div>
-
-              <div class="quatroBola">
-                <transition name="umPorVez">
-                  <button
-                    v-if="showtoast1"
-                    style="
-                      font-weight: 500;
-                      background-color: var(--background-color);
-                      font-size: 15px;
-                      --background-color: #e2e2e2;
-                      --accend-color: #bada55;
-                    "
-                    class="umaBola letraParaResumi btnCircle"
-                  >
-                    ensino
-                  </button>
-                </transition>
-                <transition name="umPorVez">
-                  <button
-                    v-if="showtoast2"
-                    style="
-                      font-weight: 500;
-                      background-color: var(--background-color);
-                      font-size: 15px;
-                      --background-color: #e2e2e2;
-                      --accend-color: #eea302;
-                    "
-                    class="umaBola letraParaResumi btnCircle"
-                  >
-                    cursos
-                  </button>
-                </transition>
-
-                <transition name="umPorVez">
-                  <button
-                    v-if="showtoast3"
-                    style="
-                      font-weight: 500;
-                      background-color: var(--background-color);
-
-                      font-size: 15px;
-                      --background-color: #e2e2e2;
-                      --accend-color: #80d8da;
-                    "
-                    class="umaBola letraParaResumi btnCircle"
-                  >
-                    empresas
-                  </button>
-                </transition>
-
-                <transition name="umPorVez">
-                  <button
-                    v-if="showtoast4"
-                    style="
-                      font-weight: 500;
-                      background-color: var(--background-color);
-                      font-size: 15px;
-                      --background-color: #e2e2e2;
-                      --accend-color: #c7c7c7;
-                    "
-                    class="umaBola letraParaResumi btnCircle"
-                  >
-                    pessoal
-                  </button>
-                </transition>
-              </div>
-            </div>
-          </transition>
-        </div>
-
+        <!-- <Meio class="meio" /> -->
+        <router-view class="meio"></router-view>
         <div class="fim letraParaResumi links">
           <div style="height: 40px; padding-top: 20px">
             <p style="font-weight: 700">GitHub</p>
@@ -120,17 +29,17 @@
           <div style="height: 40px; padding-top: 20px">
             <p style="font-weight: 700">Email</p>
 
-            <a class="oLink"> victorcubas1972@gmail.com</a>
+            <a class="oLink letraParaResumi"> victorcubas1972@gmail.com</a>
           </div>
 
           <div style="height: 40px; padding-top: 20px">
             <p style="font-weight: 700">Instagram</p>
 
-            <p class="oLink">victor.hugo.pcs2003</p>
+            <p class="oLink letraParaResumi">victor.hugo.pcs2003</p>
           </div>
 
           <div style="height: 40px; padding-top: 1.9rem" class="aoba">
-            <p class="oLink quemCrio">2024 By Victor Hugo Pedroso.</p>
+            <p class="oLink letraParaResumi quemCrio">2024 By Victor Hugo Pedroso.</p>
           </div>
         </div>
       </div>
@@ -167,6 +76,12 @@ const showtoast4 = ref(false)
   background-color: #f3f3f3;
   flex-direction: column;
 }
+.letraParaResumi {
+  font-family: 'Montserrat', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
 /* enter class */
 .toast-enter-from {
   opacity: 0;
@@ -175,29 +90,6 @@ const showtoast4 = ref(false)
 .toast-enter-to {
   opacity: 1;
   transform: translateY(0);
-}
-.umaBola.btnCircle::before {
-  content: '';
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  position: absolute;
-  background-color: var(--background-color);
-  z-index: -1;
-  border-radius: 100%;
-  transform: scale(1.5);
-  transition: transform 800ms ease-in-out;
-}
-.umaBola.btnCircle:hover::before,
-.umaBola.btnCircle:focus::before {
-  transform: scale(0);
-}
-
-.umaBola.btnCircle {
-  z-index: 1;
-  overflow: hidden;
-  background-color: var(--accend-color) !important;
 }
 
 .toast-enter-active {
@@ -217,18 +109,7 @@ const showtoast4 = ref(false)
 }
 /*arrumando as botoes do bola */
 /* enter class */
-.umPorVez-enter-from {
-  opacity: 0;
-  transform: translateY(60px);
-}
-.umPorVez-enter-to {
-  opacity: 1;
-  transform: translateY(0);
-}
 
-.umPorVez-enter-active {
-  transition: 1.5s ease;
-}
 .oPeqno {
   display: flex;
 }
@@ -236,15 +117,7 @@ const showtoast4 = ref(false)
   font-size: 9px;
   padding-top: 12px;
 }
-.letraGrande {
-  font-size: 80px;
-}
-.oResumme {
-  display: flex;
-  width: 100%;
-  height: 25rem;
-  margin-top: 2rem;
-}
+
 .topo {
   height: 50px;
   width: 100%;
@@ -259,6 +132,7 @@ const showtoast4 = ref(false)
   height: 50%;
   border-right: 2px solid rgb(0, 0, 0);
   margin-top: 16px;
+  cursor: pointer;
 }
 .rbolinha {
   width: 40px;
@@ -268,6 +142,14 @@ const showtoast4 = ref(false)
   height: 35px;
 
   border-radius: 100%;
+}
+.meio {
+  width: 85%;
+  height: 40rem;
+
+  display: flex;
+  align-items: center;
+  margin-left: 5rem;
 }
 .profissao {
   padding-left: 15px;
@@ -295,37 +177,7 @@ const showtoast4 = ref(false)
 .v-leave-to {
   opacity: 0;
 }
-.meio {
-  width: 65%;
-  height: 40rem;
-  flex-direction: column;
-  display: flex;
-  align-items: center;
-  margin-left: 5rem;
-}
-.foto {
-  width: 27%;
-  height: 90%;
-  border-radius: 100%;
-  margin-left: 10px;
-}
-.resumo {
-  width: 40%;
-  height: 50%;
-  margin-left: 5px;
-  margin-top: 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: 10px;
-  font-size: 12px;
-}
-.letraParaResumi {
-  font-family: 'Montserrat', sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
+
 .ola {
   padding-left: 5%;
 }
@@ -333,22 +185,7 @@ const showtoast4 = ref(false)
   margin-top: 9px;
   font-size: 8px;
 }
-.quatroBola {
-  width: 50%;
-  height: 10vh;
-  display: flex;
-  gap: 10px;
-  margin-left: 29%;
-  padding-top: 10px;
-}
-.umaBola {
-  width: 8rem;
-  height: 13vh;
-  border-radius: 100%;
-  border: 1px black solid;
-  cursor: pointer;
-  position: relative !important;
-}
+
 .fim {
   width: 100%;
   height: 1vh;
@@ -381,25 +218,8 @@ const showtoast4 = ref(false)
     background-color: #f3f3f3;
     flex-direction: column;
   }
-  .umaBola {
-    width: 5rem;
-    height: 8.5vh;
-    border-radius: 100%;
-    border: 1px black solid;
 
-    font-size: 12px !important;
-  }
-  .foto {
-    width: 20rem;
-    height: 90%;
-    border-radius: 100%;
-    margin-left: 10px;
-  }
-  .oResumme {
-    display: flex;
-    width: 100%;
-    height: 18rem;
-  }
+  
   .meio {
     width: 75%;
     height: 100%;
@@ -407,8 +227,8 @@ const showtoast4 = ref(false)
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 9rem;
-    padding-top: 50px;
+   margin: 0px;
+ 
   }
   .fim {
     width: 100%;
@@ -421,22 +241,7 @@ const showtoast4 = ref(false)
     display: flex;
     gap: 12%;
   }
-  .quatroBola {
-    width: 65%;
-    height: 10vh;
-    display: flex;
-    gap: 10px;
-    margin-left: 43%;
 
-    margin-bottom: 14px;
-  }
-  .ola {
-    width: 100%;
-    padding-left: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
   .parteAbaixo {
     width: 100%;
     height: 90%;
@@ -446,29 +251,9 @@ const showtoast4 = ref(false)
     align-items: center;
     flex-direction: column;
   }
-  .letraParaResumi {
-    font-family: 'Montserrat', sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400 !important;
-    font-style: normal;
-  }
-  .letraGrande {
-    font-size: 30px;
-    margin-left: 10px;
-  }
+
   .links {
     margin-top: 7px;
-    font-size: 10px;
-  }
-  .resumo {
-    width: 46%;
-    height: 50%;
-    margin-left: 5px;
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 10px;
     font-size: 12px;
   }
 }
@@ -492,25 +277,7 @@ const showtoast4 = ref(false)
     gap: 1px;
     font-size: 9px;
   }
-  .umaBola {
-    width: 5rem;
-    height: 6.8vh;
-    border-radius: 100%;
-    border: 1px black solid;
-    font-size: 8px !important;
-  }
-  .foto {
-    width: 30%;
-    height: 70%;
-    border-radius: 100%;
-    margin-left: 10px;
-    margin-top: 50px;
-  }
-  .oResumme {
-    display: flex;
-    margin-top: 0;
-    height: 15rem;
-  }
+
   .quadradinho {
     width: 80px;
     padding-left: 20px;
@@ -543,20 +310,8 @@ const showtoast4 = ref(false)
     justify-content: center;
     gap: 15%;
   }
-  .quatroBola {
-    width: 54%;
-    height: 5vh;
-    display: flex;
-    gap: 10px;
-    margin-left: 30vw;
-    margin-top: 2rem;
-  }
-  .ola {
-    padding-left: 0;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
+
+
   .links {
     margin-top: 7px;
     font-size: 6px;
@@ -565,29 +320,7 @@ const showtoast4 = ref(false)
     width: 100%;
     height: 100%;
     flex-direction: column;
-    padding-top: 95px;
-  }
-  .letraParaResumi {
-    font-family: 'Montserrat', sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300 !important;
-    font-style: normal;
-  }
-  .letraGrande {
-    font-size: 30px;
-    margin-left: 10px;
-  }
-  .resumo {
-    width: 55%;
-    height: 50%;
-    margin-left: 5px;
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 10px;
-    font-size: 9px;
-    padding-top: 50px;
+    padding-top: 25px;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 610px) {
