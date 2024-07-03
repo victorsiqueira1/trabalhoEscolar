@@ -19,8 +19,8 @@
         </div>
 
         <div class="quatroBola">
-          <transition name="umPorVez">
-            <router-link to="/resume">
+          <router-link to="/resume">
+            <transition name="umPorVez">
               <button
                 v-if="showtoast1"
                 style="
@@ -32,10 +32,11 @@
                 "
                 class="umaBola letraParaResumi btnCircle"
               >
-                ensino
+                Resumo
               </button>
-            </router-link>
-          </transition>
+            </transition>
+          </router-link>
+
           <transition name="umPorVez">
             <button
               v-if="showtoast2"
@@ -48,7 +49,7 @@
               "
               class="umaBola letraParaResumi btnCircle"
             >
-              cursos
+              Cursos
             </button>
           </transition>
 
@@ -65,7 +66,7 @@
               "
               class="umaBola letraParaResumi btnCircle"
             >
-              empresas
+              Empresas
             </button>
           </transition>
 
@@ -81,7 +82,7 @@
               "
               class="umaBola letraParaResumi btnCircle"
             >
-              pessoal
+              Pessoal
             </button>
           </transition>
         </div>
@@ -98,7 +99,7 @@ const showtoast2 = ref(false)
 const showtoast3 = ref(false)
 const showtoast4 = ref(false)
 onMounted(() => {
-  setTimeout(() => (showtoast.value = true), 1000)
+  setTimeout(() => (showtoast.value = true), 500)
   setTimeout(() => (showtoast1.value = true), 1300)
   setTimeout(() => (showtoast2.value = true), 1600)
   setTimeout(() => (showtoast3.value = true), 1900)
@@ -169,8 +170,32 @@ onMounted(() => {
   transform: translateY(0);
 }
 
+.toast-enter-from {
+  opacity: 0;
+  transform: translateY(60px);
+}
+.toast-enter-to {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.toast-enter-active {
+  transition: 2s ease;
+}
 .umPorVez-enter-active {
   transition: 1.5s ease;
+}
+
+.sair-leave-from {
+  opacity: 1;
+  transform: translateY(0);
+}
+.sair-leave-to {
+  opacity: 0;
+  transform: translateY(60px);
+}
+.sair-leave-active {
+  transition: all 2.5s ease;
 }
 .umaBola {
   width: 8rem;

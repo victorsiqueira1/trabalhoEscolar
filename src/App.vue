@@ -1,68 +1,54 @@
 <template>
-  <transition name="sair">
-    <div v-if="fim" class="container">
-      <div class="topo">
-        <div class="oPeqno">
-          <img class="rbolinha" src="./components/icone.png" alt="" />
-          <h1 class="profissao" style="color: black; padding-top: 6px">Victor Hugo</h1>
-          <h2 class="profissao linha">full-stack programmer</h2>
-        </div>
-
-        <div class="quadradinho">ensino</div>
-        <div class="quadradinho">cursos</div>
-        <div class="quadradinho">empresas</div>
-        <div class="quadradinho">pessoal</div>
+  <div v-if="fim" class="container">
+    <div class="topo">
+      <div class="oPeqno">
+        <img class="rbolinha" src="./components/icone.png" alt="" />
+        <h1 class="profissao" style="color: black; padding-top: 6px">Victor Hugo</h1>
+        <h2 class="profissao linha">full-stack programmer</h2>
       </div>
 
-      <div class="parteAbaixo">
-        <!-- <Meio class="meio" /> -->
-        <router-view class="meio"></router-view>
-        <div class="fim letraParaResumi links">
-          <div style="height: 40px; padding-top: 20px">
-            <p style="font-weight: 700">GitHub</p>
+      <div class="quadradinho">ensino</div>
+      <div class="quadradinho">cursos</div>
+      <div class="quadradinho">empresas</div>
+      <div class="quadradinho">pessoal</div>
+    </div>
+    <router-view class="meio"></router-view>
+    <div class="parteAbaixo">
+      <div class="fim letraParaResumi links">
+        <div style="height: 40px; padding-top: 20px">
+          <p style="font-weight: 700">GitHub</p>
 
-            <a class="oLink" href=" https://github.com/victorsiqueira1">
-              https://github.com/victorsiqueira1</a
-            >
-          </div>
+          <a class="oLink" href=" https://github.com/victorsiqueira1">
+            https://github.com/victorsiqueira1</a
+          >
+        </div>
 
-          <div style="height: 40px; padding-top: 20px">
-            <p style="font-weight: 700">Email</p>
+        <div style="height: 40px; padding-top: 20px">
+          <p style="font-weight: 700">Email</p>
 
-            <a class="oLink letraParaResumi"> victorcubas1972@gmail.com</a>
-          </div>
+          <a class="oLink letraParaResumi"> victorcubas1972@gmail.com</a>
+        </div>
 
-          <div style="height: 40px; padding-top: 20px">
-            <p style="font-weight: 700">Instagram</p>
+        <div style="height: 40px; padding-top: 20px">
+          <p style="font-weight: 700">Instagram</p>
 
-            <p class="oLink letraParaResumi">victor.hugo.pcs2003</p>
-          </div>
+          <p class="oLink letraParaResumi">victor.hugo.pcs2003</p>
+        </div>
 
-          <div style="height: 40px; padding-top: 1.9rem" class="aoba">
-            <p class="oLink letraParaResumi quemCrio">2024 By Victor Hugo Pedroso.</p>
-          </div>
+        <div style="height: 40px; padding-top: 1.9rem" class="aoba">
+          <p class="oLink letraParaResumi quemCrio">2024 By Victor Hugo Pedroso.</p>
         </div>
       </div>
     </div>
-  </transition>
+  </div>
 </template>
 <script setup>
 import { onMounted, ref } from 'vue'
 
 onMounted(() => {
   setTimeout(() => (fim.value = true), 1000)
-  setTimeout(() => (showtoast.value = true), 1000)
-  setTimeout(() => (showtoast1.value = true), 1300)
-  setTimeout(() => (showtoast2.value = true), 1600)
-  setTimeout(() => (showtoast3.value = true), 1900)
-  setTimeout(() => (showtoast4.value = true), 2200)
 })
 const fim = ref(false)
-const showtoast = ref(false)
-const showtoast1 = ref(false)
-const showtoast2 = ref(false)
-const showtoast3 = ref(false)
-const showtoast4 = ref(false)
 </script>
 <style scoped>
 .container {
@@ -70,7 +56,7 @@ const showtoast4 = ref(false)
   font-weight: 400;
   font-style: normal;
   width: 100%;
-
+  height: 100vh;
   display: flex;
   align-items: center;
   background-color: #f3f3f3;
@@ -145,8 +131,8 @@ const showtoast4 = ref(false)
 }
 .meio {
   width: 85%;
-  height: 40rem;
-
+  flex: 1;
+  padding-bottom: 50px;
   display: flex;
   align-items: center;
   margin-left: 5rem;
@@ -162,7 +148,7 @@ const showtoast4 = ref(false)
 }
 .parteAbaixo {
   width: 100%;
-  height: 95vh;
+  padding-bottom: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -188,7 +174,7 @@ const showtoast4 = ref(false)
 
 .fim {
   width: 100%;
-  height: 1vh;
+
   margin-top: 7rem;
 
   font-size: 13px;
@@ -212,23 +198,21 @@ const showtoast4 = ref(false)
     font-weight: 400;
     font-style: normal;
     width: 100%;
-    height: 90%;
+
     display: flex;
     align-items: center;
     background-color: #f3f3f3;
     flex-direction: column;
   }
 
-  
   .meio {
     width: 75%;
-    height: 100%;
+
     flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: center;
-   margin: 0px;
- 
+    margin: 0px;
   }
   .fim {
     width: 100%;
@@ -244,7 +228,7 @@ const showtoast4 = ref(false)
 
   .parteAbaixo {
     width: 100%;
-    height: 90%;
+
     padding-top: 30px;
     display: flex;
     justify-content: center;
@@ -263,7 +247,7 @@ const showtoast4 = ref(false)
     font-weight: 400;
     font-style: normal;
     width: 98vw;
-    height: 92%;
+
     display: flex;
     align-items: center;
     background-color: #f3f3f3;
@@ -288,7 +272,7 @@ const showtoast4 = ref(false)
   }
   .meio {
     width: 90%;
-    height: 100%;
+  
     flex-direction: column;
     display: flex;
     align-items: center;
@@ -311,14 +295,13 @@ const showtoast4 = ref(false)
     gap: 15%;
   }
 
-
   .links {
     margin-top: 7px;
     font-size: 6px;
   }
   .parteAbaixo {
     width: 100%;
-    height: 100%;
+    
     flex-direction: column;
     padding-top: 25px;
   }
@@ -329,7 +312,7 @@ const showtoast4 = ref(false)
     font-weight: 400;
     font-style: normal;
     width: 100%;
-    height: 100vh;
+
     display: flex;
     align-items: center;
     background-color: #f3f3f3;
