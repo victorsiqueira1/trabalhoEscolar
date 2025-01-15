@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <div class="meio">
     <transition name="toast">
       <div class="container" v-show="showtoast">
-        <h4 style="padding-top: 55px">JORNADA DE ENSINO</h4>
+        <h4 style="padding-top: 25px">JORNADA DE ENSINO</h4>
         <div class="ensinos">
           <div class="quadrad">
             <p class="letrapeq" style="padding-top: 9px">2006-2019</p>
@@ -71,12 +71,23 @@ onMounted(() => {
   padding-bottom: 20px;
   padding-top: 20px;
   border-top: 1px solid #e2e2e2;
+  justify-content: center;
+}
+.meio {
+  width: 85%;
+  flex: 1;
+  padding-top: 0px;
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  margin-left: 5rem;
+  padding-top: 30px;
 }
 .ensinos {
   display: flex;
   flex-direction: column;
   width: 45%;
-  padding-top: 90px;
+  padding-top: 70px;
 
   height: 100%;
 }
@@ -112,5 +123,41 @@ onMounted(() => {
 }
 .letrapeq {
   font-size: 12px;
+}
+@media screen and (min-width: 610px) and (max-width: 1023px) {
+  .ensinos {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    padding-top: 70px;
+    padding-left: 50px;
+    height: 100%;
+  }
+  .meio {
+    width: 85%;
+    flex: 1;
+    padding-top: 0px;
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    margin-left: 0rem;
+    padding-top: 30px;
+  }
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: normal;
+    gap: 100px;
+    font-family: 'Work Sans', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    padding-left: 0px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #e2e2e2;
+    justify-content: center;
+  }
 }
 </style>

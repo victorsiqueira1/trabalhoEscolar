@@ -1,9 +1,9 @@
 <template>
-  <div>
+  <div class="meio">
     <transition name="toast">
       <div class="ola" v-show="showtoast">
         <div class="oResumme">
-          <img class="foto" src="../components/WhatsApp Image 2024-06-20 at 12.48.21.jpeg" alt="" />
+          <img class="foto" src="../components/euSarom.jpeg" alt="" />
           <div class="resumo letraParaResumi">
             <h1 class="letraGrande">Victor Hugo</h1>
             <h3 style="margin-bottom: 10px; margin-left: 15px">Um pouco de mim</h3>
@@ -37,54 +37,58 @@
             </transition>
           </router-link>
 
-          <transition name="umPorVez">
-            <button
-              v-if="showtoast2"
-              style="
-                font-weight: 500;
-                background-color: var(--background-color);
-                font-size: 15px;
-                --background-color: #e2e2e2;
-                --accend-color: #eea302;
-              "
-              class="umaBola letraParaResumi btnCircle"
-            >
-              Cursos
-            </button>
-          </transition>
+          <router-link to="/projetos">
+            <transition name="umPorVez">
+              <button
+                v-if="showtoast2"
+                style="
+                  font-weight: 500;
+                  background-color: var(--background-color);
+                  font-size: 15px;
+                  --background-color: #e2e2e2;
+                  --accend-color: #eea302;
+                "
+                class="umaBola letraParaResumi btnCircle"
+              >
+                Projetos
+              </button>
+            </transition>
+          </router-link>
+          <router-link to="/empresas">
+            <transition name="umPorVez">
+              <button
+                v-if="showtoast3"
+                style="
+                  font-weight: 500;
+                  background-color: var(--background-color);
 
-          <transition name="umPorVez">
-            <button
-              v-if="showtoast3"
-              style="
-                font-weight: 500;
-                background-color: var(--background-color);
-
-                font-size: 15px;
-                --background-color: #e2e2e2;
-                --accend-color: #80d8da;
-              "
-              class="umaBola letraParaResumi btnCircle"
-            >
-              Empresas
-            </button>
-          </transition>
-
-          <transition name="umPorVez">
-            <button
-              v-if="showtoast4"
-              style="
-                font-weight: 500;
-                background-color: var(--background-color);
-                font-size: 15px;
-                --background-color: #e2e2e2;
-                --accend-color: #c7c7c7;
-              "
-              class="umaBola letraParaResumi btnCircle"
-            >
-              Pessoal
-            </button>
-          </transition>
+                  font-size: 15px;
+                  --background-color: #e2e2e2;
+                  --accend-color: #80d8da;
+                "
+                class="umaBola letraParaResumi btnCircle"
+              >
+                Empresas
+              </button>
+            </transition>
+          </router-link>
+          <router-link to="/pessoal">
+            <transition name="umPorVez">
+              <button
+                v-if="showtoast4"
+                style="
+                  font-weight: 500;
+                  background-color: var(--background-color);
+                  font-size: 15px;
+                  --background-color: #e2e2e2;
+                  --accend-color: #c7c7c7;
+                "
+                class="umaBola letraParaResumi btnCircle"
+              >
+                Pessoal
+              </button>
+            </transition>
+          </router-link>
         </div>
       </div>
     </transition>
@@ -116,6 +120,14 @@ onMounted(() => {
   width: 100%;
   height: 100%;
 }
+.meio {
+  width: 85%;
+  flex: 1;
+  padding-top: 70px;
+  display: flex;
+  align-items: center;
+  margin-left: 5rem;
+}
 .foto {
   width: 22%;
   height: 90%;
@@ -126,7 +138,6 @@ onMounted(() => {
   display: flex;
   width: 100%;
   height: 25rem;
-  margin-top: 2rem;
 }
 .fim {
   width: 100%;
@@ -244,7 +255,7 @@ onMounted(() => {
     font-size: 12px !important;
   }
   .foto {
-    width: 20rem;
+    width: 17rem;
     height: 90%;
     border-radius: 100%;
     margin-left: 10px;
@@ -254,7 +265,7 @@ onMounted(() => {
     height: 10vh;
     display: flex;
     gap: 10px;
-    margin-left: 25rem;
+    margin-left: 18rem;
     padding-top: 0px;
     padding-bottom: 20px;
     margin-bottom: 14px;
@@ -267,7 +278,7 @@ onMounted(() => {
     margin-left: 0rem;
     width: 100%;
     height: 100%;
-    padding-top: 5%;
+    padding-top: 0;
   }
   .oResumme {
     display: flex;
@@ -299,7 +310,7 @@ onMounted(() => {
 @media screen and (min-width: 610px) and (max-width: 1023px) {
   .umaBola {
     width: 4rem;
-    height: 9vh;
+    height: 8.5vh;
     border-radius: 100%;
     border: 1px black solid;
     font-size: 9px !important;

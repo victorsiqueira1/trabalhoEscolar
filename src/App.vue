@@ -2,17 +2,29 @@
   <div v-if="fim" class="container">
     <div class="topo">
       <div class="oPeqno">
-        <img class="rbolinha" src="./components/icone.png" alt="" />
-        <h1 class="profissao" style="color: black; padding-top: 6px">Victor Hugo</h1>
-        <h2 class="profissao linha">full-stack programmer</h2>
+        <img class="rbolinha" src="./components/fita.png" alt="" />
+        <h1 class="profissao" style="color: black; padding-top: 6px; ">
+          Victor Hugo
+        </h1>
+        <h2 class="profissao2 linha">full-stack programmer</h2>
       </div>
-
-      <div class="quadradinho">ensino</div>
-      <div class="quadradinho">cursos</div>
-      <div class="quadradinho">empresas</div>
-      <div class="quadradinho">pessoal</div>
+      <router-link style="text-decoration: none; color: rgb(0, 0, 0)" to="/resume">
+        <div class="quadradinho">Resumo</div>
+      </router-link>
+      <router-link style="text-decoration: none; color: rgb(0, 0, 0)" to="/projetos">
+        <div class="quadradinho">Projetos</div>
+      </router-link>
+      <router-link style="text-decoration: none; color: rgb(0, 0, 0)" to="/empresas">
+        <div class="quadradinho">Empresas</div>
+      </router-link>
+      <router-link style="text-decoration: none; color: rgb(0, 0, 0)" to="/pessoal">
+        <div class="quadradinho">Pessoal</div>
+      </router-link>
+      <router-link style="text-decoration: none; color: rgb(0, 0, 0)" to="/">
+        <div class="quadradinho" style="border-right: 2px solid rgb(0, 0, 0)">Inicio</div>
+      </router-link>
     </div>
-    <router-view class="meio"></router-view>
+    <router-view></router-view>
     <div class="parteAbaixo">
       <div class="fim letraParaResumi links">
         <div style="height: 40px; padding-top: 20px">
@@ -56,7 +68,7 @@ const fim = ref(false)
   font-weight: 400;
   font-style: normal;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   background-color: #f3f3f3;
@@ -112,12 +124,48 @@ const fim = ref(false)
   gap: 1px;
   font-size: 15px;
 }
+.profissao2{
+  padding-left: 0px;
+    width: 20rem;
+    margin-right: 0px
+}
+.quadradinho::before {
+  color: rgb(0, 0, 0);
+  transition: transform 0.5s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+
+  z-index: -1;
+}
+.quadradinho:hover,
+.quadradinho:focus {
+  color: rgb(10, 150, 150);
+}
+.quadradinho:hover:before,
+.quadradinho:focus:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.quadradinho:active {
+  transform: scale(0.9);
+}
 .quadradinho {
   width: 80px;
-  padding-left: 20px;
-  height: 50%;
-  border-right: 2px solid rgb(0, 0, 0);
-  margin-top: 16px;
+  padding-left: 17px;
+  height: 65%;
+
+  border-bottom: 2px solid rgb(0, 0, 0);
+  border-left: 2px solid rgb(0, 0, 0);
+  padding-top: 6px;
+  transition: 1s ease all;
+  z-index: 1;
   cursor: pointer;
 }
 .rbolinha {
@@ -132,23 +180,25 @@ const fim = ref(false)
 .meio {
   width: 85%;
   flex: 1;
-  padding-bottom: 50px;
+  padding-top: 70px;
   display: flex;
   align-items: center;
   margin-left: 5rem;
 }
 .profissao {
   padding-left: 15px;
+  margin-right: 50px
 }
 .linha {
   font-family: 'Playwrite AU VIC', cursive;
   font-optical-sizing: auto;
   font-weight: 100;
   font-style: normal;
+  padding-right: 40px;
 }
 .parteAbaixo {
   width: 100%;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -228,8 +278,7 @@ const fim = ref(false)
 
   .parteAbaixo {
     width: 100%;
-
-    padding-top: 30px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -261,6 +310,17 @@ const fim = ref(false)
     gap: 1px;
     font-size: 9px;
   }
+  .profissao {
+    padding-left: 0px;
+    width: 5rem;
+    margin-right: 0px
+  }
+  .profissao2{
+    padding-left: 10px;
+    width: 14rem;
+    margin-right: 0px
+  }
+
 
   .quadradinho {
     width: 80px;
@@ -272,7 +332,7 @@ const fim = ref(false)
   }
   .meio {
     width: 90%;
-  
+
     flex-direction: column;
     display: flex;
     align-items: center;
@@ -301,7 +361,7 @@ const fim = ref(false)
   }
   .parteAbaixo {
     width: 100%;
-    
+
     flex-direction: column;
     padding-top: 25px;
   }
