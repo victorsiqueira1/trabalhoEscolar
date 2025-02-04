@@ -242,13 +242,13 @@ onMounted(() => {
     border: 3px solid black;
     position: relative;
 
-    top:160px;
+    top: 160px;
     left: -70px;
-
   }
 }
 
 @media screen and (min-width: 610px) and (max-width: 1023px) {
+  
   .textoUm {
     width: 50%;
     height: 40% !important;

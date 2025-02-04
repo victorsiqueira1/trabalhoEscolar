@@ -168,7 +168,7 @@ onMounted(() => {
   width: 50%;
   height: 10vh;
   display: flex;
-  gap: 10px;
+  gap: 10.5rem;
 
   padding-top: 10px;
 }
@@ -214,7 +214,7 @@ onMounted(() => {
   border-radius: 100%;
   border: 1px black solid;
   cursor: pointer;
-  position: relative !important;
+  position: absolute;
 }
 .umaBola.btnCircle::before {
   content: '';
@@ -227,11 +227,11 @@ onMounted(() => {
   z-index: -1;
   border-radius: 100%;
   transform: scale(1.5);
-  transition: transform 800ms ease-in-out;
+  transition: transform 800ms ease-out;
 }
 .umaBola.btnCircle:hover::before,
 .umaBola.btnCircle:focus::before {
-  transform: scale(0);
+  transform: scale(1);
 }
 
 .umaBola.btnCircle {
@@ -264,7 +264,7 @@ onMounted(() => {
     width: 65%;
     height: 10vh;
     display: flex;
-    gap: 10px;
+    gap: 7rem;
     margin-left: 18rem;
     padding-top: 0px;
     padding-bottom: 20px;
@@ -307,7 +307,7 @@ onMounted(() => {
     font-size: 12px;
   }
 }
-@media screen and (min-width: 610px) and (max-width: 1023px) {
+@media screen and (min-width: 611px) and (max-width: 1023px) {
   .umaBola {
     width: 4rem;
     height: 8.5vh;
@@ -328,7 +328,7 @@ onMounted(() => {
     height: 15rem;
   }
   .meio {
-    width: 90%;
+    width: 100%;
     height: 100%;
     flex-direction: column;
     display: flex;
@@ -354,8 +354,88 @@ onMounted(() => {
     width: 64%;
     height: 5vh;
     display: flex;
-    gap: 10px;
+    gap: 4.5rem;
     margin-left: 25vw;
+    margin-top: 2rem;
+  }
+  .letraParaResumi {
+    font-family: 'Montserrat', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300 !important;
+    font-style: normal;
+  }
+  .letraGrande {
+    font-size: 30px;
+    margin-left: 10px;
+  }
+  .resumo {
+    width: 55%;
+    height: 50%;
+    margin-left: 5px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+    font-size: 9px;
+    padding-top: 50px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 610px) {
+  .umaBola {
+    width: 3.5rem;
+    height: 8.5vh;
+    border-radius: 100%;
+    border: 1px black solid;
+    font-size: 9px !important;
+  }
+  .foto {
+    width: 42%;
+    height: 60%;
+    border-radius: 100%;
+    margin-left: 10px;
+    margin-top: 50px;
+  }
+  .oResumme {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    justify-content: center;
+    align-items: center;
+    height: 15rem;
+  }
+  .meio {
+    width: 100%;
+    height: 100%;
+
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding-top: 0px;
+    justify-content: center;
+  }
+  .ola {
+    padding-left: 0%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+  .quemCrio {
+    margin-top: 9px;
+    font-size: 7px !;
+  }
+  .quatroBola {
+    width: 64%;
+    height: 5vh;
+    display: flex;
+    gap: 4.5rem;
+    position: absolute;
+    top: 115%;
+    margin-left: 5vw;
     margin-top: 2rem;
   }
   .letraParaResumi {

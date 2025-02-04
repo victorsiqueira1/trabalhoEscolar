@@ -3,24 +3,30 @@
     <div class="topo">
       <div class="oPeqno">
         <img class="rbolinha" src="./components/fita.png" alt="" />
-        <h1 class="profissao" style="color: black; padding-top: 6px; ">
-          Victor Hugo
-        </h1>
+        <h1 class="profissao" style="color: black; padding-top: 6px">Victor Hugo</h1>
         <h2 class="profissao2 linha">full-stack programmer</h2>
       </div>
-      <router-link style="text-decoration: none; color: rgb(0, 0, 0)" to="/resume">
+      <router-link class="tamanho" style="text-decoration: none; color: rgb(0, 0, 0)" to="/resume">
         <div class="quadradinho">Resumo</div>
       </router-link>
-      <router-link style="text-decoration: none; color: rgb(0, 0, 0)" to="/projetos">
+      <router-link
+        class="tamanho"
+        style="text-decoration: none; color: rgb(0, 0, 0)"
+        to="/projetos"
+      >
         <div class="quadradinho">Projetos</div>
       </router-link>
-      <router-link style="text-decoration: none; color: rgb(0, 0, 0)" to="/empresas">
+      <router-link
+        class="tamanho"
+        style="text-decoration: none; color: rgb(0, 0, 0)"
+        to="/empresas"
+      >
         <div class="quadradinho">Empresas</div>
       </router-link>
-      <router-link style="text-decoration: none; color: rgb(0, 0, 0)" to="/pessoal">
+      <router-link class="tamanho" style="text-decoration: none; color: rgb(0, 0, 0)" to="/pessoal">
         <div class="quadradinho">Pessoal</div>
       </router-link>
-      <router-link style="text-decoration: none; color: rgb(0, 0, 0)" to="/">
+      <router-link class="tamanho" style="text-decoration: none; color: rgb(0, 0, 0)" to="/">
         <div class="quadradinho" style="border-right: 2px solid rgb(0, 0, 0)">Inicio</div>
       </router-link>
     </div>
@@ -72,6 +78,8 @@ const fim = ref(false)
   display: flex;
   align-items: center;
   background-color: #f3f3f3;
+  padding: 0;
+  margin: 0;
   flex-direction: column;
 }
 .letraParaResumi {
@@ -124,10 +132,10 @@ const fim = ref(false)
   gap: 1px;
   font-size: 15px;
 }
-.profissao2{
+.profissao2 {
   padding-left: 0px;
-    width: 20rem;
-    margin-right: 0px
+  width: 20rem;
+  margin-right: 0px;
 }
 .quadradinho::before {
   color: rgb(0, 0, 0);
@@ -187,7 +195,7 @@ const fim = ref(false)
 }
 .profissao {
   padding-left: 15px;
-  margin-right: 50px
+  margin-right: 50px;
 }
 .linha {
   font-family: 'Playwrite AU VIC', cursive;
@@ -248,7 +256,7 @@ const fim = ref(false)
     font-weight: 400;
     font-style: normal;
     width: 100%;
-
+    justify-content: center;
     display: flex;
     align-items: center;
     background-color: #f3f3f3;
@@ -295,13 +303,26 @@ const fim = ref(false)
     font-family: 'Bebas Neue', sans-serif;
     font-weight: 400;
     font-style: normal;
-    width: 98vw;
+    width: 100%;
 
     display: flex;
     align-items: center;
     background-color: #f3f3f3;
     flex-direction: column;
   }
+  .quadradinho {
+    width: 50px !important;
+    padding-left: 17px;
+    height: 65%;
+    font-size: 10 !important;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    border-left: 2px solid rgb(0, 0, 0);
+    padding-top: 6px;
+    transition: 1s ease all;
+    z-index: 1;
+    cursor: pointer;
+  }
+
   .topo {
     height: 50px;
     width: 100%;
@@ -313,18 +334,21 @@ const fim = ref(false)
   .profissao {
     padding-left: 0px;
     width: 5rem;
-    margin-right: 0px
+    margin-right: 0px;
   }
-  .profissao2{
+  .profissao2 {
     padding-left: 10px;
     width: 14rem;
-    margin-right: 0px
+    margin-right: 0px;
+    width: 13rem;
   }
-
+  .linha {
+    padding-right: 0px;
+  }
 
   .quadradinho {
     width: 80px;
-    padding-left: 20px;
+    padding-left: 10px;
     height: 50%;
     border-right: 2px solid rgb(0, 0, 0);
     margin-top: 10px;
@@ -372,7 +396,7 @@ const fim = ref(false)
     font-weight: 400;
     font-style: normal;
     width: 100%;
-
+    height: 150vh;
     display: flex;
     align-items: center;
     background-color: #f3f3f3;
@@ -380,12 +404,27 @@ const fim = ref(false)
   }
   .topo {
     height: 50px;
-    width: 100%;
+    width: 60%;
     opacity: 0.75;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 5px;
-    font-size: 5px;
+    font-size: 9px;
+  }
+  .profissao {
+    padding: 0;
+    margin: 0;
+    width: 55px;
+    font-size: 13px;
+  }
+  .profissao2 {
+    padding-left: 0px;
+    width: 11rem;
+    font-size: 10px;
+  }
+  .tamanho {
+    width: 80px;
   }
   .umaBola {
     width: 3rem;
@@ -412,11 +451,14 @@ const fim = ref(false)
   }
   .quadradinho {
     width: 80px;
-    padding-left: 20px;
+    padding-left: 22px;
     height: 50%;
     border-right: 2px solid rgb(0, 0, 0);
+    border-top: 2px solid rgb(0, 0, 0);
     margin-top: 10px;
-    padding-top: 5px;
+    padding-top: 1px;
+
+    padding-bottom: 5px;
   }
   .meio {
     width: 70vw;
@@ -452,6 +494,12 @@ const fim = ref(false)
   }
   .oPeqno {
     display: flex;
+    flex-direction: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 0;
+    font-size: 8px;
   }
   .links {
     margin-top: 7px;
@@ -459,7 +507,7 @@ const fim = ref(false)
   }
   .parteAbaixo {
     width: 70%;
-    height: 100%;
+
     flex-direction: column;
     margin-top: 50px;
   }
