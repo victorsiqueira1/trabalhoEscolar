@@ -227,7 +227,7 @@ onMounted(() => {
   z-index: -1;
   border-radius: 100%;
   transform: scale(1.5);
-  transition: transform 800ms ease-out;
+  transition: transform 800ms ease-in;
 }
 .umaBola.btnCircle:hover::before,
 .umaBola.btnCircle:focus::before {
@@ -381,10 +381,10 @@ onMounted(() => {
     padding-top: 50px;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 610px) {
+@media screen and (min-width: 320px) and (max-width: 609px) {
   .umaBola {
-    width: 3.5rem;
-    height: 8.5vh;
+    width: 3rem;
+    height: 7.5vh;
     border-radius: 100%;
     border: 1px black solid;
     font-size: 9px !important;
@@ -432,10 +432,10 @@ onMounted(() => {
     width: 64%;
     height: 5vh;
     display: flex;
-    gap: 4.5rem;
+    gap: 3.8rem;
     position: absolute;
     top: 115%;
-    margin-left: 5vw;
+    margin-left: 12.5vw;
     margin-top: 2rem;
   }
   .letraParaResumi {

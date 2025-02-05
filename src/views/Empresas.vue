@@ -10,7 +10,7 @@
             </p>
           </div>
         </div>
-        <div style="height: 100%">
+        <div class="quadradBaixo" style="height: 100%">
           <div style="padding-bottom: 20px">
             <img
               style="width: 15rem; height: 4.4rem"
@@ -18,7 +18,7 @@
               alt=""
             />
           </div>
-          <div style="display: flex; padding-top: 10px">
+          <div class="textFoto" style="display: flex; padding-top: 10px">
             <div class="textoUm" style="display: flex; flex-direction: column; gap: 50px">
               <div class="otextao">
                 Com 33 anos de tradição, a Sarom – cooperativa de crédito que faz parte do Sistema
@@ -248,7 +248,6 @@ onMounted(() => {
 }
 
 @media screen and (min-width: 610px) and (max-width: 1023px) {
-  
   .textoUm {
     width: 50%;
     height: 40% !important;
@@ -289,6 +288,89 @@ onMounted(() => {
     bottom: 0px;
     top: -90px;
     left: 100px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 609px) {
+  .container {
+    width: 85%;
+    flex: 1;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0px;
+    margin-left: 2rem;
+  }
+  .textoUm {
+    width: 50%;
+    height: 40% !important;
+
+    font-family: 'Montserrat', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    height: 50px;
+    font-style: normal;
+    font-size: 9px;
+    margin-top: 30px;
+  }
+  .fotoQuatro {
+    width: 10.5rem;
+    height: 8rem;
+    padding: 10px;
+    border: 3px solid black;
+    position: relative;
+
+    bottom: 50px;
+  }
+  .fotoQuatro2 {
+    width: 10.5rem;
+    height: 8rem;
+    padding: 10px;
+    border: 3px solid black;
+    position: relative;
+    bottom: 0px;
+    top: -90px;
+    left: 100px;
+  }
+  .quadradBaixo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .textFoto {
+    display: flex;
+    flex-direction: column;
+    padding-top: 15rem !important;
+
+    height: 50rem;
+  }
+  .grupoFoto {
+    width: 40%;
+    padding-top: 140px;
+    position: relative;
+    bottom: 450px;
+    height: 5rem;
+    left: 40px;
+    padding: 0;
+  }
+  .otextao {
+    width: 20rem;
+  }
+  .empresas {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    gap: 50px;
+    font-family: 'Work Sans', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    padding-bottom: 0px;
+    margin-top: 150px;
+    border-top: 1px solid #e2e2e2;
+    padding-top: 0px;
+    justify-content: center;
   }
 }
 </style>

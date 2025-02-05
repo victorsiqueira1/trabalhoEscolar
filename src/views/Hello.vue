@@ -160,4 +160,41 @@ onMounted(() => {
     justify-content: center;
   }
 }
+@media screen and (min-width: 320px) and (max-width: 609px) {
+  .meio {
+    width: 85%;
+    flex: 1;
+    padding-top: 0px;
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    margin-left: 0rem;
+    padding-top: 150px;
+  }
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    gap: 50px;
+    font-family: 'Work Sans', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    padding-left: 0px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #e2e2e2;
+    justify-content: center;
+  }
+
+  .ensinos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 0px;
+
+    height: 100%;
+  }
+}
 </style>

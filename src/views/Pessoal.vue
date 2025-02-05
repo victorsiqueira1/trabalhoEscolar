@@ -3,11 +3,11 @@
     <transition name="toast">
       <div class="meio" v-show="showtoast">
         <div class="tituloNovo">
-          <h1 style="font-size: 60px">Meu Pessoal</h1>
+          <h1 class="letraGrande" style="font-size: 60px">Meu Pessoal</h1>
           <p class="tituloMenor">O que faço quando não estou programando?</p>
         </div>
         <div class="quadradoFamilia">
-          <div style="padding-bottom: 50px; width: 50%">
+          <div class="textoUm" style="padding-bottom: 50px; width: 50%">
             <div class="titulos">Familia</div>
             <div class="familia">
               <p style="padding: 10px">
@@ -35,7 +35,7 @@
                 <img class="fotoDois" src="../components/Praia.jpeg" alt="" />
               </div>
             </div>
-            <div style="display: flex; gap: 1rem; margin-top: 40px">
+            <div class="fotosSemMarg" style="display: flex; gap: 1rem; margin-top: 40px">
               <div>
                 <img class="fotoTres" src="../components/pelora.jpeg" alt="" />
               </div>
@@ -47,6 +47,7 @@
         </div>
         <div>
           <div
+            class="fotoCachorras"
             style="
               width: 100%;
               height: 35rem;
@@ -243,7 +244,7 @@ onMounted(() => {
 
     bottom: 20px;
     left: 150px;
-    width: 42rem;
+    width: 0 !important;
   }
   .fotoTres {
     width: 8rem;
@@ -278,5 +279,113 @@ onMounted(() => {
     border: 3px solid black;
     padding: 8px;
   }
+}
+
+@media screen and (min-width: 320px) and (max-width: 609px) {
+  .familia {
+    width: 18rem;
+    height: 50%;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 9px;
+    font-family: 'Montserrat', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+  }
+  .fotoUm {
+    width: 8rem;
+    height: 7rem;
+    border: 3px solid black;
+    padding: 8px;
+  }
+  .fotoDois {
+    width: 8rem;
+    height: 7rem;
+
+    border: 3px solid black;
+    padding: 8px;
+  }
+  .fotoTres {
+    width: 8rem;
+    height: 7rem;
+    border: 3px solid black;
+    padding: 8px;
+  }
+  .fotoQuatro {
+    width: 8rem;
+    height: 7rem;
+    position: relative;
+    top: 6rem;
+    right: 60px;
+    border: 3px solid black;
+    padding: 8px;
+  }
+  .quadradoFamilia {
+    width: 100%;
+    height: 34rem;
+
+    display: flex;
+    flex-direction: column;
+    padding-top: 0px;
+    gap: 1rem;
+  }
+  .separa {
+    display: flex;
+    gap: 2rem;
+  }
+  .textoUm {
+    padding: 0px !important;
+  }
+  .fotosSemMarg {
+    margin-top: 10px !important;
+  }
+  .titulos {
+    height: 50px;
+    display: flex;
+    margin-bottom: 0px;
+    margin-left: 17px;
+    font-size: 28px;
+  }
+  .fotoCachorras {
+    display: flex;
+    height: 35rem !important;
+    gap: 1rem;
+    margin-top: 100px;
+    flex-direction: column;
+    align-items: normal !important;
+  }
+  .ultimasFotos {
+    margin-top: 0px;
+    justify-content: center;
+    left: 70px;
+    top: -50px;
+    width: 10rem !important;
+  }
+  .tituloMenor {
+    height: 50px;
+    margin-top: 2rem;
+    font-size: 18px;
+  }
+  .tituloNovo {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    border-bottom: 2px solid #beb6b6;
+  }
+  .letraGrande {
+    font-size: 25px !important;
+  }
+  .meio {
+  width: 85%;
+  flex: 1;
+
+  margin-top: 220px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+}
 }
 </style>

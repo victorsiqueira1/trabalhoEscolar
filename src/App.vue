@@ -354,6 +354,10 @@ const fim = ref(false)
     margin-top: 10px;
     padding-top: 5px;
   }
+  .aoba {
+    font-size: 1px;
+    padding: 15px !important;
+  }
   .meio {
     width: 90%;
 
@@ -390,17 +394,20 @@ const fim = ref(false)
     padding-top: 25px;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 610px) {
+@media screen and (min-width: 320px) and (max-width: 609px) {
   .container {
     font-family: 'Bebas Neue', sans-serif;
     font-weight: 400;
     font-style: normal;
     width: 100%;
-    height: 150vh;
+    min-height: 150vh;
     display: flex;
     align-items: center;
     background-color: #f3f3f3;
     flex-direction: column;
+  }
+  .quemCrio {
+    font-size: 7px;
   }
   .topo {
     height: 50px;
@@ -446,8 +453,7 @@ const fim = ref(false)
     height: 15rem;
   }
   .aoba {
-    font-size: 1px;
-    padding-top: 0px;
+    padding-top: 16px !important;
   }
   .quadradinho {
     width: 80px;
@@ -477,12 +483,13 @@ const fim = ref(false)
     padding-top: 15px;
     font-size: 3px;
     padding-left: 20px;
+    padding-top: 0;
     border-top: 1px solid #c7c7c7;
     display: flex;
     font-size: 5px;
     gap: 0;
     justify-content: center;
-    gap: 7%;
+    gap: 3%;
   }
   .quatroBola {
     width: 20rem;
@@ -505,6 +512,7 @@ const fim = ref(false)
     margin-top: 7px;
     font-size: 6px;
   }
+
   .parteAbaixo {
     width: 70%;
 

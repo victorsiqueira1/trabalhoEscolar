@@ -415,7 +415,7 @@ onMounted(() => {
 
     font-optical-sizing: auto;
     font-weight: 500;
-    font-size:11px;
+    font-size: 11px;
     font-style: normal;
     margin-left: 0px;
   }
@@ -453,6 +453,213 @@ onMounted(() => {
     gap: 5%;
     margin-top: 50px;
     display: flex;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 609px) {
+  .container {
+    width: 85%;
+    flex: 1;
+    padding-top: 7rem;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    margin-left: 0rem;
+  }
+  .texteDois {
+    width: 70%;
+    height: 10rem !important;
+    margin-top: 0px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 9px;
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    margin-left: 0px;
+  }
+  .textoTreis {
+    width: 70%;
+    height: 100% !important;
+    margin-top: 0px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 9px;
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    margin-left: 0px;
+  }
+  .textoQuat {
+    width: 70%;
+    height: 50% !important;
+    margin-top: 0px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 9px;
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    margin-left: 0px;
+  }
+  .textoCinco {
+    width: 70%;
+    height: 100% !important;
+    margin-top: 0px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 9px;
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    margin-left: 0px;
+  }
+  .textoSeis {
+    width: 70%;
+    height: 100% !important;
+    margin-top: 0px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 9px;
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    margin-left: 0px;
+  }
+  .textoSete {
+    width: 100%;
+    height: 40% !important;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    border-top: 1px solid #beb6b6;
+    padding-top: 20px;
+
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 9px;
+    font-style: normal;
+    margin-left: 0px;
+  }
+
+  .fotoUm {
+    width: 75%;
+    height: 10rem;
+    margin-left: 0rem;
+  }
+
+  .fotoDois {
+    width: 75%;
+    height: 58%;
+    margin-left: 0rem;
+  }
+  .fotoTreis {
+    width: 75%;
+    height: 58%;
+    margin-left: 0rem;
+  }
+  .fotoQuatro {
+    width: 75%;
+    height: 58%;
+    margin-left: 0rem;
+  }
+
+  .sec {
+    width: 100%;
+    height: 15rem;
+    gap: 0;
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .terc {
+    width: 100%;
+    height: 20rem;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .quart {
+    width: 100%;
+    height: 20rem;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cinco {
+    width: 100%;
+    height: 20rem;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .seis {
+    width: 100%;
+    height: 20rem;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .tituloUm {
+    height: 50px;
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+    font-size: 10px;
+    border-top: 1px solid #beb6b6;
+  }
+  .tituloDois {
+    height: 50px;
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+    font-size: 10px;
+    border-top: 1px solid #beb6b6;
+  }
+  .tituloTres {
+    height: 50px;
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 10px;
+    border-top: 1px solid #beb6b6;
+  }
+  .textoDeTitu {
+    padding-top: 8px;
+    padding-left: 6px;
+  }
+  .primi {
+    width: 80%;
+    height: 35%;
+    font-size: 9px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
   }
 }
 </style>
