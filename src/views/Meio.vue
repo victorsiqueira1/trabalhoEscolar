@@ -387,6 +387,7 @@ onMounted(() => {
     height: 7.5vh;
     border-radius: 100%;
     border: 1px black solid;
+    background-color: none !important;
     font-size: 9px !important;
   }
   .foto {
@@ -423,6 +424,7 @@ onMounted(() => {
     width: 100%;
     height: 100%;
     margin: 0;
+    margin-bottom: 100px;
   }
   .quemCrio {
     margin-top: 9px;
@@ -437,11 +439,12 @@ onMounted(() => {
     top: 124%;
     margin-left: 12.5vw;
     margin-top: 1rem;
+    background-color: none;
   }
   .letraParaResumi {
     font-family: 'Montserrat', sans-serif;
     font-optical-sizing: auto;
-    font-weight: 300 !important;
+    font-weight: 700 !important;
     font-style: normal;
   }
   .letraGrande {
@@ -449,15 +452,15 @@ onMounted(() => {
     margin-left: 10px;
   }
   .resumo {
-    width: 55%;
-    height: 50%;
+    width: 85%;
+    height: 60%;
     margin-left: 5px;
-    margin-top: 50px;
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-left: 10px;
-    font-size: 9px;
+    font-size: 11px;
     padding-top: 50px;
   }
 }

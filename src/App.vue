@@ -417,7 +417,7 @@ const fim = ref(false)
     flex-direction: column;
     align-items: center;
     gap: 5px;
-    font-size: 9px;
+    font-size: 13px;
   }
   .profissao {
     padding: 0;
