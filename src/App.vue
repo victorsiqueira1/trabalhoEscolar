@@ -497,7 +497,7 @@ const fim = ref(false)
     display: flex;
     gap: 10px;
     margin-left: 40vw;
-    margin-top: 3rem;
+    margin-top: 0rem !important;
   }
   .oPeqno {
     display: flex;
@@ -517,7 +517,7 @@ const fim = ref(false)
     width: 70%;
 
     flex-direction: column;
-    margin-top: 50px;
+    margin-top: 10px;
   }
   .letraParaResumi {
     font-family: 'Montserrat', sans-serif;
