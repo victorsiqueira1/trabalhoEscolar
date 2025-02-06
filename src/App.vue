@@ -497,7 +497,7 @@ const fim = ref(false)
     display: flex;
     gap: 10px;
     margin-left: 40vw;
-    margin-top: 0rem !important;
+    
   }
   .oPeqno {
     display: flex;
