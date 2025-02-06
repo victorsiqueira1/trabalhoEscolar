@@ -434,9 +434,9 @@ onMounted(() => {
     display: flex;
     gap: 3.8rem;
     position: absolute;
-    top: 127%;
+    top: 124%;
     margin-left: 12.5vw;
-    margin-top: 0rem;
+    margin-top: 1rem;
   }
   .letraParaResumi {
     font-family: 'Montserrat', sans-serif;
