@@ -50,7 +50,13 @@
         <div style="height: 40px; padding-top: 20px">
           <p style="font-weight: 700">Instagram</p>
 
-          <p class="oLink letraParaResumi">victor.hugo.pcs2003</p>
+          <a
+            class="oLink"
+            href="https://www.instagram.com/victor.hugo.pcs2003?igsh=MXhzMmJobWJvcDR0dA=="
+            target="_blank"
+          >
+            victor.hugo.pcs2003
+          </a>
         </div>
 
         <div style="height: 40px; padding-top: 1.9rem" class="aoba">
@@ -246,7 +252,6 @@ const fim = ref(false)
   display: flex;
 }
 .oLink {
-  text-decoration: none;
   color: black;
 }
 
@@ -382,10 +387,16 @@ const fim = ref(false)
     justify-content: center;
     gap: 15%;
   }
+    .letraParaResumi {
+    font-family: 'Montserrat', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500 !important;
+    font-style: normal;
+  }
 
   .links {
     margin-top: 7px;
-    font-size: 6px;
+    font-size: 8px;
   }
   .parteAbaixo {
     width: 100%;
@@ -497,7 +508,6 @@ const fim = ref(false)
     display: flex;
     gap: 10px;
     margin-left: 40vw;
-    
   }
   .oPeqno {
     display: flex;
@@ -510,7 +520,7 @@ const fim = ref(false)
   }
   .links {
     margin-top: 7px;
-    font-size: 6px;
+   font-size: 7px;
   }
 
   .parteAbaixo {
@@ -522,7 +532,7 @@ const fim = ref(false)
   .letraParaResumi {
     font-family: 'Montserrat', sans-serif;
     font-optical-sizing: auto;
-    font-weight: 300 !important;
+    font-weight: 500 !important;
     font-style: normal;
   }
   .letraGrande {

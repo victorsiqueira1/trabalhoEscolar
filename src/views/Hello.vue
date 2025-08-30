@@ -126,11 +126,11 @@
           <br />
 
           <div class="quadrad">
-            <p class="letrapeq" style="padding-top: 9px">2022-Now</p>
+            <p class="letrapeq" style="padding-top: 9px">2022-2025</p>
             <div class="parte">
               <h4>Sicoob Sarom</h4>
               <p class="fonteText letrapeq">
-                Hoje trabalho como Desenvolvedor de Sistemas na Sicoob Sarom
+                Trabalho no Desenvolvimento de Sistema do Sicoob Sarom
               </p>
             </div>
           </div>
@@ -140,6 +140,14 @@
             <div class="parte">
               <h4>Cruzeiro do Sul polo UNIFRAN</h4>
               <p class="fonteText letrapeq">Hoje faço faculdade na Cruzeiro do Sul polo UNIFRAN</p>
+            </div>
+          </div>
+          <br />
+          <div class="quadrad">
+            <p class="letrapeq" style="padding-top: 9px">2025-Now</p>
+            <div class="parte">
+              <h4>Sicoob Sarom</h4>
+              <p class="fonteText letrapeq">Trabalho na parte de reposição do Sicoob Sarom</p>
             </div>
           </div>
         </div>
@@ -159,11 +167,10 @@ onMounted(() => {
 <style scoped>
 .container {
   width: 100%;
-  height: 37rem;
   display: flex;
   flex-direction: row;
   align-items: normal;
-  gap: 200px;
+
   font-family: 'Work Sans', sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
@@ -175,7 +182,7 @@ onMounted(() => {
 }
 
 .skills {
-  width: 100%;
+  width: 40rem;
 }
 
 .skills_titulo {
@@ -206,6 +213,7 @@ onMounted(() => {
 }
 .meio {
   width: 85%;
+  height: 100%;
   flex: 1;
   padding-top: 0px;
   display: flex;
@@ -262,11 +270,15 @@ onMounted(() => {
     flex-direction: column;
     width: 55%;
     padding-top: 70px;
-    padding-left: 50px;
+    padding-left: 10px;
     height: 100%;
   }
+  .skills {
+    width: 100%;
+  }
   .meio {
-    width: 85%;
+    width: 100%;
+    height: 100%;
     flex: 1;
     padding-top: 0px;
     display: flex;
@@ -280,7 +292,7 @@ onMounted(() => {
     display: flex;
     flex-direction: row;
     align-items: normal;
-    gap: 100px;
+
     font-family: 'Work Sans', sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
@@ -303,12 +315,17 @@ onMounted(() => {
     margin-left: 0rem;
     padding-top: 150px;
   }
+    .skills {
+    width: 30rem;
+    
+  }
   .container {
     width: 100%;
+    gap: 40px;
     display: flex;
     flex-direction: column;
     align-items: normal;
-    gap: 50px;
+
     font-family: 'Work Sans', sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
@@ -325,7 +342,7 @@ onMounted(() => {
     flex-direction: column;
     width: 100%;
     padding-top: 0px;
-
+    padding-left: 10px;
     height: 100%;
   }
 }

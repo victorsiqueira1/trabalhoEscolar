@@ -8,12 +8,14 @@
             <h1 class="letraGrande">Victor Hugo</h1>
             <h3 style="margin-bottom: 10px; margin-left: 15px">Um pouco de mim</h3>
             <p style="margin-left: 15px">
-              meu nome é Victor Hugo, estou estudando sistema de informação, e trabalho atualmente
-              Sicoob Sarom, Apesar de mexer mais em banco de dados e desenvolvimento de sistemas,
-              meu sonho sempre foi trabalhar em desenvolvimento de jogos, por isso estou estudando
-              algumas linguagem relacionadas a esses ramo. Uma coisa que contribuiu muito para
-              entrar na Sarom, foi que foi aberta uma vaga PCD, e eu tenho autismo nivel 1, tive
-              muita dificuldade em me acostumar no trabalho presencial, mais estou cada dia melhor.
+              meu nome é Victor Hugo, estou estudando sistema de informação, trabalhando no Sicoob
+              Sarom, trabalhei na area de desenvolvimente, atualmente estou trabalhando na parte de
+              reposição da empresa, meu sonho sempre foi trabalhar em desenvolvimento de jogos,
+              porem atualmente tenho me focado mais em aprender linguagens que ajudam em
+              desenvolvimento de sistemas ( como javascript e python) e banco de dados tipo SQL
+              SERVER 2022 e AZURE. Uma coisa que contribuiu muito para entrar na Sarom, foi que foi
+              aberta uma vaga PCD, e eu tenho autismo nivel 1, tive muita dificuldade em me
+              acostumar no trabalho presencial, mais estou cada dia melhor.
             </p>
           </div>
         </div>
@@ -118,7 +120,7 @@ onMounted(() => {
   align-items: center;
   margin-left: 10rem;
   width: 100%;
-  height: 100%;
+  height: 20rem;
 }
 .meio {
   width: 85%;
@@ -130,14 +132,13 @@ onMounted(() => {
 }
 .foto {
   width: 22%;
-  height: 90%;
+  height: 14rem;
   border-radius: 100%;
   margin-left: 10px;
 }
 .oResumme {
   display: flex;
   width: 100%;
-  height: 25rem;
 }
 .fim {
   width: 100%;
@@ -169,8 +170,6 @@ onMounted(() => {
   height: 10vh;
   display: flex;
   gap: 10.5rem;
-
-  padding-top: 10px;
 }
 .umPorVez-enter-from {
   opacity: 0;
@@ -231,7 +230,7 @@ onMounted(() => {
 }
 .umaBola.btnCircle:hover::before,
 .umaBola.btnCircle:focus::before {
-  transform: scale(1);
+  transform: scale(0);
 }
 
 .umaBola.btnCircle {
@@ -247,28 +246,25 @@ onMounted(() => {
 }
 @media screen and (min-width: 1024px) and (max-width: 2134px) {
   .umaBola {
-    width: 6rem;
+    width: 6.8rem;
     height: 12vh;
     border-radius: 100%;
     border: 1px black solid;
 
     font-size: 12px !important;
   }
+
   .foto {
     width: 17rem;
-    height: 90%;
+
     border-radius: 100%;
     margin-left: 10px;
   }
   .quatroBola {
-    width: 65%;
+    width: 42rem;
     height: 10vh;
     display: flex;
-    gap: 7rem;
-    margin-left: 18rem;
-    padding-top: 0px;
-    padding-bottom: 20px;
-    margin-bottom: 14px;
+    gap: 7.5rem;
   }
   .ola {
     padding-left: 5%;
@@ -277,13 +273,12 @@ onMounted(() => {
     align-items: center;
     margin-left: 0rem;
     width: 100%;
-    height: 100%;
+
     padding-top: 0;
   }
   .oResumme {
     display: flex;
-    width: 100%;
-    height: 17rem;
+    width: 80rem;
   }
   .letraParaResumi {
     font-family: 'Montserrat', sans-serif;
@@ -309,59 +304,56 @@ onMounted(() => {
 }
 @media screen and (min-width: 611px) and (max-width: 1023px) {
   .umaBola {
-    width: 4rem;
-    height: 8.5vh;
+    width: 5rem;
+    height: 10.5vh;
     border-radius: 100%;
     border: 1px black solid;
     font-size: 9px !important;
   }
   .foto {
     width: 30%;
-    height: 70%;
+
     border-radius: 100%;
     margin-left: 10px;
     margin-top: 50px;
   }
   .oResumme {
     display: flex;
-    margin-top: 0;
-    height: 15rem;
-  }
-  .meio {
     width: 100%;
-    height: 100%;
-    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .meio {
+    width: 85%;
+    flex: 1;
+    padding-top: 70px;
     display: flex;
     align-items: center;
-    margin: 0;
-    padding-top: 0px;
-    justify-content: center;
+    margin-left: 0rem;
   }
   .ola {
-    padding-left: 5%;
+    padding-left: 0;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 100%;
-    height: 100%;
-    margin: 0;
+    width: 34rem;
+    margin-left: 0px;
+    margin-bottom: 0px;
   }
   .quemCrio {
     margin-top: 9px;
     font-size: 7px !;
   }
   .quatroBola {
-    width: 64%;
-    height: 5vh;
+    width: 10rem;
+    height: 15vh;
     display: flex;
-    gap: 4.5rem;
-    margin-left: 25vw;
-    margin-top: 2rem;
+    gap: 5.5rem;
   }
   .letraParaResumi {
     font-family: 'Montserrat', sans-serif;
     font-optical-sizing: auto;
-    font-weight: 300 !important;
+    font-weight: 500 !important;
     font-style: normal;
   }
   .letraGrande {
@@ -369,7 +361,7 @@ onMounted(() => {
     margin-left: 10px;
   }
   .resumo {
-    width: 55%;
+    width: 100%;
     height: 50%;
     margin-left: 5px;
     margin-top: 50px;
@@ -377,14 +369,14 @@ onMounted(() => {
     flex-direction: column;
     justify-content: center;
     padding-left: 10px;
-    font-size: 9px;
+    font-size: 12px;
     padding-top: 50px;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 609px) {
   .umaBola {
-    width: 3rem;
-    height: 7.5vh;
+    width: 6rem;
+    height: 12vh;
     border-radius: 100%;
     border: 1px black solid;
     background-color: none !important;
@@ -392,7 +384,7 @@ onMounted(() => {
   }
   .foto {
     width: 42%;
-    height: 60%;
+
     border-radius: 100%;
     margin-left: 10px;
     margin-top: 50px;
@@ -403,12 +395,10 @@ onMounted(() => {
     margin-top: 0;
     justify-content: center;
     align-items: center;
-    height: 15rem;
   }
   .meio {
     width: 100%;
-    height: 100%;
-
+    height: 20rem;
     flex-direction: column;
     display: flex;
     align-items: center;
@@ -422,23 +412,22 @@ onMounted(() => {
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    height: 100%;
-    margin: 0;
-    margin-bottom: 100px;
+    gap: 60px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-top: 150px;
   }
   .quemCrio {
     margin-top: 9px;
     font-size: 7px !;
   }
   .quatroBola {
-    width: 64%;
+    width: 25rem;
     height: 5vh;
     display: flex;
-    gap: 3.8rem;
-    position: absolute;
-    top: 124%;
-    margin-left: 12.5vw;
-    margin-top: 1rem;
+    gap: 7rem;
+
     background-color: none;
   }
   .letraParaResumi {
@@ -455,7 +444,7 @@ onMounted(() => {
     width: 85%;
     height: 60%;
     margin-left: 5px;
-    margin-top: 100px;
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
