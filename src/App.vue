@@ -520,7 +520,7 @@ const fim = ref(false)
   }
   .links {
     margin-top: 7px;
-   font-size: 7px;
+   font-size: 4px;
   }
 
   .parteAbaixo {

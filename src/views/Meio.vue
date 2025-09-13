@@ -375,8 +375,8 @@ onMounted(() => {
 }
 @media screen and (min-width: 320px) and (max-width: 609px) {
   .umaBola {
-    width: 6rem;
-    height: 12vh;
+    width: 4.8rem;
+    height: 9.5vh;
     border-radius: 100%;
     border: 1px black solid;
     background-color: none !important;
@@ -423,10 +423,10 @@ onMounted(() => {
     font-size: 7px !;
   }
   .quatroBola {
-    width: 25rem;
+    width: 21rem;
     height: 5vh;
     display: flex;
-    gap: 7rem;
+    gap: 5.3rem;
 
     background-color: none;
   }
@@ -437,7 +437,7 @@ onMounted(() => {
     font-style: normal;
   }
   .letraGrande {
-    font-size: 30px;
+    font-size: 25px;
     margin-left: 10px;
   }
   .resumo {
