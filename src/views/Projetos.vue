@@ -12,80 +12,207 @@
             </p>
           </div>
         </div>
-        <div class="tituloUm">
-          <h1>1.</h1>
-          <p class="textoDeTitu">Projeto copia do site que utilizo no trabalho.</p>
-        </div>
-        <div class="sec">
-          <p class="texteDois">
-            Copia do Sarom conect, esse projeto foi feito de forma decontraida, eu so tava meio sem
-            ter oq fazer e decidi copia o site da Sarom, porem, nenhum botão funciona,pois eu não
-            continuei.
-          </p>
-          <img class="fotoUm" src="../components/alien.png" alt="" />
-        </div>
-        <div class="tituloDois">
-          <h1>2.</h1>
-          <p class="textoDeTitu">Fazendo uma Pokedex.</p>
-        </div>
-        <div class="terc">
-          <p class="textoTreis">
-            Queria treinar o uso de API, então decidi usar a API de pokemon,basicamente usei muitos
-            PNG, foi simples,e foi muito bom para treinar meu javascript, pois foram usados varias
-            rotas, algo que eu não estava tão acostumado, foi usado tambem o Vue, que com toda
-            certeza não estava tão acostumado, esse projeto esta totalmente completo, com tudo
-            funcionando!
-          </p>
+        <div class="meio_primeiro_projeto">
+          <h1 class="titulo">Projeto para Conta Hitorias Que sera Refeito!</h1>
+          <div class="meio_primeiro_projeto-explicacao_doPrimeiroProjeto">
+            <nav>
+              <section id="projeto-historias-front" class="oResumoDoProjeto">
+                <header class="meio_primeiro_projeto-header">
+                  <div class="meio_primeiro_projeto_texto">SW</div>
+                  <div>
+                    <h2 class="titulo" style="margin: 0; ">
+                      Histórias Front — Star Wars Alternativo
+                    </h2>
+                    <p style="margin: 4px 0 0; color: #555">
+                      Projeto pessoal — SPA em Vue 3, feito para treinar autenticação, rotas e
+                      estado global.
+                    </p>
+                  </div>
+                </header>
 
-          <img class="fotoDois" src="../components/pokedex.png" alt="" />
+                <main style="margin-top: 18px; color: #333; line-height: 1.6">
+                  <p>
+                    Desenvolvi este projeto para praticar o ecossistema moderno de
+                    <strong>Vue</strong>. A ideia foi montar uma aplicação simples, mas completa,
+                    com fluxo de login, navegação entre telas e integração com APIs externas. Não é
+                    apenas um exercício visual — foi também um teste de arquitetura: estrutura dos
+                    componentes, gerenciamento de estado e deploy.
+                  </p>
+
+                  <p>O que implementei na prática:</p>
+
+                  <ul style="margin: 8px 0 16px 20px; color: #333">
+                    <li>
+                      <strong>Vue 3 (Composition API)</strong> — organização dos componentes e
+                      lógica reativa.
+                    </li>
+                    <li>
+                      <strong>Pinia</strong> — estado global para manter o app previsível e fácil de
+                      debugar.
+                    </li>
+                    <li>
+                      <strong>Vue Router</strong> — rotas e transições sem recarregar a página.
+                    </li>
+                    <li>
+                      <strong>Axios</strong> — chamadas HTTP para buscar/mostrar dados (simulando
+                      integrações reais).
+                    </li>
+                    <li>
+                      <strong>Vite</strong> — build rápida e ótimo DX (hot-reload, builds leves).
+                    </li>
+                  </ul>
+
+                  <p>
+                    Chamei o projeto de <em>Star Wars Alternativo</em> por conta da inspiração
+                    temática inicial, mas o foco foi técnico: construir algo que eu realmente
+                    conseguisse manter e evoluir. Algumas decisões que tomei e que podem interessar:
+                  </p>
+
+                  <ul style="margin: 8px 0 16px 20px; color: #333">
+                    <li>Separação clara entre apresentação e lógica (components / composables).</li>
+                    <li>
+                      Pinia para evitar prop drilling e centralizar a autenticação e estado do
+                      usuário.
+                    </li>
+                    <li>Rotas protegidas para telas que exigem login.</li>
+                    <li>
+                      Deploy no Vercel para facilitar demonstração e testes por outras pessoas.
+                    </li>
+                  </ul>
+
+                  <p>
+                    Aprendi muito com esse projeto — principalmente sobre organização de pastas,
+                    fluxo de autenticação e como manter o código simples quando a aplicação cresce.
+                    Se quiser, posso disponibilizar no repositório os pontos que considero mais
+                    interessantes (coments nos componentes, readme com arquitetura e scripts de
+                    deploy).
+                  </p>
+
+                  <p style="margin-top: 18px">
+                    <a
+                      href="https://historias-front.vercel.app/login"
+                      target="_blank"
+                      rel="noopener"
+                      style="
+                        display: inline-block;
+                        padding: 10px 14px;
+                        border-radius: 8px;
+                        background: #111827;
+                        color: #fff;
+                        text-decoration: none;
+                        font-weight: 600;
+                      "
+                    >
+                      Ver site →
+                    </a>
+                    <small style="margin-left: 12px; color: #666">(deploy: Vercel)</small>
+                  </p>
+                </main>
+
+                <footer
+                  style="
+                    margin-top: 20px;
+                    border-top: 1px solid #f0f0f0;
+                    padding-top: 12px;
+                    color: #666;
+                    font-size: 13px;
+                  "
+                >
+                  Tecnologias: Vue 3 · Pinia · Vue Router · Axios · Vite · Vercel
+                </footer>
+              </section>
+            </nav>
+          </div>
         </div>
-        <div class="tituloTres">
-          <h1>3.</h1>
-          <p class="textoDeTitu">Fazendo um site de pesquisa para achar filmes.</p>
-        </div>
-        <div class="quart">
-          <p class="textoQuat">
-            Queria treinar o uso de API, então decidi usar a API de pokemon,basicamente usei muitos
-            oi mais um desafio para treinar o uso de API, oq na epoca eu não conhecia tanto, esse
-            projeto tambem me possibilitou conhecer mais de backend e tambem treinar o uso de html e
-            ccs.
-          </p>
-          <img class="fotoTreis" src="../components/filmes.png" alt="" />
-        </div>
-        <div class="tituloTres">
-          <h1>4.</h1>
-          <p class="textoDeTitu">Site sobre o filme MATRIX</p>
-        </div>
-        <div class="cinco">
-          <p class="textoCinco">
-            Na epoca que fiz esse site eu não gostei do jeito que ele ficou, mais vendo hoje em dia,
-            talvez seja um dos meu projetos favoritos, pois fiz muito uso de animação do css, e pra
-            um dos meu primeiros projetos, achei muito decente,lembro que fiz ele depois de assistir
-            matrix e algumas animações ligadas a historia e estava facinado, ai resolvi fazer um
-            "resumo" do primeiro filme.
-          </p>
-          <img class="fotoQuatro" src="../components/matrix.png" alt="" />
-        </div>
-        <div class="tituloTres">
-          <h1>5.</h1>
-          <p class="textoDeTitu">Site sobre a serie CYBERPUNK ENDRUNNERS</p>
-        </div>
-        <div class="seis">
-          <p class="textoSeis">
-            Talvez o meu projeto mais antigo que tenho guardado, eu amo esse site, se voce tem
-            miopia, não se preocupe, eu não sei pq eu fiz literalmente tudo nesse site ser enorme,
-            dava pra ver o site do outro canto da sala. Mais relamente amo muito esse site, foi o
-            primeiro que fiz pra algo que amo, que é sobre uma serie sobre um dos meu jogos
-            favoritos de todos os tempos, o site tem seus erros, mais até que não ficou tão ruim
-            assim.
-          </p>
-          <img class="fotoQuatro" src="../components/cyber.png" alt="" />
-        </div>
-        <div class="textoSete">
-          <div style="text-align: center; width: 60%">
-            esses foram todos os sites que fiz que eu realmente gostei, tem mais, mais a maioria não
-            funciona ou esta inacabado, esses pelo menos eram os mais pertos de ter acabado ou que
-            eu realmente finalizei
+        <div class="meio_segundo_projeto">
+          <h1 class="titulo">Projeto Cyberpunk Fanpage</h1>
+          <div class="meio_segundo_projeto-explicacao_doSegundoProjeto">
+            <nav>
+              <section id="projeto-cyberpunk" class="oResumoDoProjeto">
+                <header class="meio_segundo_projeto-header">
+                  <div class="meio_segundo_projeto_texto">CP</div>
+                  <div>
+                    <h2 class="titulo" style="margin: 0;">Cyberpunk Site — Fanpage Interativa</h2>
+                    <p style="margin: 4px 0 0; color: #555">
+                      Projeto pessoal — página estática feita em HTML, CSS e JS para treinar
+                      responsividade, dark mode e links externos.
+                    </p>
+                  </div>
+                </header>
+
+                <main style="margin-top: 18px; color: #333; line-height: 1.6">
+                  <p>
+                    Criei este projeto como um exercício de front-end simples, mas com foco visual.
+                    A ideia foi desenvolver uma fanpage inspirada no universo
+                    <strong>Cyberpunk 2077</strong> e no anime <em>Edgerunners</em>, explorando
+                    elementos de layout, design responsivo e interatividade sem uso de frameworks.
+                  </p>
+
+                  <p>O que implementei na prática:</p>
+                  <ul style="margin: 8px 0 16px 20px; color: #333">
+                    <li>
+                      <strong>HTML + CSS + JS puro</strong> — estrutura, estilização e
+                      interatividade sem dependências externas.
+                    </li>
+                    <li>
+                      <strong>Dark Mode</strong> — alternância entre tema claro e escuro com botão
+                      customizado.
+                    </li>
+                    <li>
+                      <strong>Links externos</strong> — integração com matérias, críticas e trailers
+                      relacionados ao jogo e anime.
+                    </li>
+                    <li>
+                      <strong>Imagens e GIFs</strong> — reforço da estética cyberpunk com recursos
+                      visuais animados.
+                    </li>
+                    <li>
+                      <strong>Responsividade</strong> — adaptação do layout para diferentes tamanhos
+                      de tela.
+                    </li>
+                  </ul>
+
+                  <p>
+                    Este projeto foi um passo importante para treinar conceitos básicos de
+                    front-end: trabalhar a experiência visual, aplicar animações e entender melhor
+                    como estruturar uma página estática do zero. Foi também uma oportunidade de
+                    explorar meu interesse pela temática cyberpunk.
+                  </p>
+
+                  <p style="margin-top: 18px">
+                    <a
+                      href="https://sitecyber.vercel.app/"
+                      target="_blank"
+                      rel="noopener"
+                      style="
+                        display: inline-block;
+                        padding: 10px 14px;
+                        border-radius: 8px;
+                        background: #111827;
+                        color: #fff;
+                        text-decoration: none;
+                        font-weight: 600;
+                      "
+                    >
+                      Ver site →
+                    </a>
+                    <small style="margin-left: 12px; color: #666">(deploy: Vercel)</small>
+                  </p>
+                </main>
+
+                <footer
+                  style="
+                    margin-top: 20px;
+                    border-top: 1px solid #f0f0f0;
+                    padding-top: 12px;
+                    color: #666;
+                    font-size: 13px;
+                  "
+                >
+                  Tecnologias: HTML · CSS · JavaScript · Vercel
+                </footer>
+              </section>
+            </nav>
           </div>
         </div>
       </div>
@@ -312,6 +439,76 @@ onMounted(() => {
   width: 58%;
   height: 26rem;
 }
+.oResumoDoProjeto {
+  max-width: 900px;
+  margin: 15px auto;
+
+  font-family: 'Montserrat', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+}
+.meio_primeiro_projeto {
+  height: 100%;
+  width: 100%;
+  margin: 20px auto; /* mais espaçamento externo */
+  padding: 24px; /* respiro interno */
+
+  border-radius: 12px;
+  background: #fff;
+
+  /* borda para reforçar o quadrado */
+  border: 1px solid rgba(0, 0, 0, 0.12);
+
+  /* sombra mais forte */
+  box-shadow: 4px 6px 20px rgba(0, 0, 0, 0.12);
+}
+.meio_primeiro_projeto-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.meio_segundo_projeto-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.meio_segundo_projeto_texto {
+  width: 89px;
+  height: 64px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #111827 0%, #1f2937 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 700;
+}
+.meio_primeiro_projeto_texto {
+  width: 64px;
+  height: 64px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #111827 0%, #1f2937 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 700;
+}
+.meio_segundo_projeto {
+  height:100%;
+  width: 100%;
+  margin: 20px auto; /* mais espaçamento externo */
+  padding: 24px; /* respiro interno */
+
+  border-radius: 12px;
+  background: #fff;
+
+  /* borda para reforçar o quadrado */
+  border: 1px solid rgba(0, 0, 0, 0.12);
+
+  /* sombra mais forte */
+  box-shadow: 4px 6px 20px rgba(0, 0, 0, 0.12);
+}
 @media screen and (min-width: 610px) and (max-width: 1023px) {
   .fotoUm {
     width: 56%;
@@ -466,6 +663,18 @@ onMounted(() => {
     margin-bottom: 10px;
     margin-left: 0rem;
   }
+  .titulo{
+    font-size: 12px;
+  }
+  .oResumoDoProjeto {
+  max-width: 900px;
+  margin: 15px auto;
+
+  font-family: 'Montserrat', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: 8px;
+}
   .texteDois {
     width: 70%;
     height: 10rem !important;
