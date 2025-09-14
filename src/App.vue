@@ -83,7 +83,7 @@ const fim = ref(false)
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-color: #f3f3f3;
+ 
   padding: 0;
   margin: 0;
   flex-direction: column;
@@ -264,7 +264,7 @@ const fim = ref(false)
     justify-content: center;
     display: flex;
     align-items: center;
-    background-color: #f3f3f3;
+
     flex-direction: column;
   }
 
@@ -312,7 +312,7 @@ const fim = ref(false)
 
     display: flex;
     align-items: center;
-    background-color: #f3f3f3;
+
     flex-direction: column;
   }
   .quadradinho {
@@ -414,7 +414,7 @@ const fim = ref(false)
     min-height: 150vh;
     display: flex;
     align-items: center;
-    background-color: #f3f3f3;
+
     flex-direction: column;
   }
   .quemCrio {
