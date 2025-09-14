@@ -870,5 +870,8 @@ onMounted(() => {
     align-items: center;
     margin-top: 50px;
   }
+  footer{
+  font-size: 9px !important;
+  }
 }
 </style>
